@@ -2,43 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/9aa2c7e256.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="shortcut icon" href="images/csgoLogo.jpg" type="image/x-icon">
+
     <title>CS:GO Graffitis</title>
 
 </head>
 <body>
     <header>
-        <img src="images/csgoLogo.jpg" alt="CS:GO Logo">
+        
+        <a href="index.html" title="Click Here to Return Home"><img src="images/csgoLogo.jpg" alt="CS:GO Logo"></a>
+    
         <div>
             <h2>CS:GO Graffitis</h2>
             <h3>Understand the story behind each graffiti (UNDER CONSTRUCTION)</h3>
         </div>
     </header>
 
-    <nav id="nav_menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plays/coldzeramirage.html">Coldzera Graffiti</a></li>
-            <li><a href="plays/dosianade.html">Dosia Graffiti</a></li>
-            <li><a href="plays/fnaticbasedust.html">Fnatic Graffiti</a></li>
-            <li><a href="plays/friberginferno.html">Friberg Graffiti</a></li>
-            <li><a href="plays/olofboost.html">Olofboost Graffiti</a></li>
-            <li><a href="plays/olofdefuse.html">Olofmeister Graffiti</a></li>
-            <li><a href="plays/s1mplecache.html">S1mple Graffiti</a></li>
-        </ul>
+    <!-- Navigation Menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="plays/carousel.html">Graffitis <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="plays/coldzeramirage.html">Coldzera</a>
+                <a href="plays/dosianade.html">Dosia</a>
+                <a href="plays/fnaticbasedust.html">Fnatic</a>
+                <a href="plays/friberginferno.html">Friberg</a>
+                <a href="plays/olofboost.html">Olofboost</a>
+                <a href="plays/olofdefuse.html">OlofDefuse</a>
+                <a href="plays/s1mplecache.html">S1mple</a>
+            </div>
+        </div>
+        <div><a href="aboutme.html">About CS:GO</a></div>
     </nav>
 
     <main>
+        <aside>
+            <nav class="navlist">
+                <ul>
+                    <li><a href="#History">History of CS:GO</a></li>
+                    <li><a href="#Importance">Importance</a></li>
+                    <li><a href="#Graffiti">Some Graffitis</a></li>
+                    <li><a href="#Video">Full Video</a></li>
+                </ul>
+            </nav>
+            <div class="thumbs">
+                <div><img src="images/stickers.jpg" alt=""></div>
+                <div><img src="images/wallpaper.jpg" alt=""></div>
+                <div><img src="images/stickers2.jpg" alt=""></div>
+            </div>
+        </aside>
         <section>
-            <p>The main idea for this website is to talk about CS:GO (Counter strike: Global Offensive), a game with a lot of history, culture, community, and contribution to the development of the person that I'm today. Therefore I wanted to talk about some historical plays that professional players made, that even Valve (the developer of the game), acknowledged and decided to put in-game references to those moments.</p>
+            <h3 id="History"><a href="#History"></a>History of CS:GO</h3>
+            <p>In 1999 Counter-Strike was released as a mod for Half-Life. As the game progressed from a beta to a full release, it refined the classic gameplay that has come to define competitive shooters and produced a dedicated community that has followed the game since its first release. Through each of its iterations – 1.6, Source, and Global Offensive – Counter-Strike has been the de facto benchmark of a player’s first person shooter skill. Teams from around the world demonstrate their abilities and strategies in local, regional, and international tournaments streamed to millions of viewers across the globe.</p>
+            
+            <h3 id="Importance"><a href="products"></a>Importance</h3>
+            <ul>
+                <li>
+                    <p>CS:GO offers separate ways to become immortalized in the game. For example, you can get personal stickers for participating in a Major (CS:GO Worldcup), which happened to a few hundred players. An elite yet quite large club.</p>
+                </li>
+                <li>
+                    <p>But there’s an even smaller group of players—just seven—who earned some iconic marks on CS:GO maps for their extraordinary achievements.</p>
+                </li>
+                <li>
+                    <p>A player must accomplish something incredible during a Major (CS:GO Worldcup) to earn one.</p>
+                </li>
+            </ul>
+            <h3 id="Graffiti"><a href="#rock"></a>Some Graffitis</h3>
+            <div class="albumcovers">
+                <div><img src="images/OlofGraffiti.jpg" alt=""></div>
+                <div><img src="images/s1mpleGraffiti.webp" alt=""></div>
+                <div><img src="images/colzeraGraffiti.jpg" alt=""></div>
+            </div>
+            <h3 id="Video" >Full Video About it</h3>
+            <div class="frog">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/zQ87h7ti2Jw" title="Every Graffiti/Memorial in CSGO! (History Made by Pros, Immortalised by Valve)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </div>
 
-            <p>Each page would have the story of one of those moments while the home page would be a place to give context to the reader about the game and how important those plays were.</p>
         </section>
     </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Bernardo Leal Productions</p>
+    </footer>
 
-
-
-    
+    <script src="js/scripts.js"></script>
 </body>
 </html>

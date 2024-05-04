@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    background-color: black;
+    color: silver;
+}
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px ridge silver;
+    margin-bottom: 2em;
+}
+header img {
+    padding: 1em;
+}
+header h2 {
+    font-size: 300%;
+}
+header h3 {
+    font-size: 200%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagecarousel {
+    position: relative;
+}
+.image {
+    display: none;
+}
+
+.image:first-of-type {
+    display: block;
+}
+
+.image img {
+    border-radius: 10px;
+    border: 3px ridge goldenrod;
+}
+
+.prev, .next {
+    display: none;
+    position: absolute;
+    top: 50%;
+    font-size: 250%;
+    color: rgba(192, 192, 192, 0.3);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.prev:hover, .next:hover {
+    color: gold;
+}
+
+.dots {
+    position: absolute;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+
+.dot {
+    margin-top: 1em;
+    padding: 7px;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: gold;
+}
+
+.fadeout {
+    animation: fade 2000ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+footer {
+    padding: 2em 0;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px ridge silver;
+    margin-top: 2em;
+}
+
+@media (max-width: 800px) {
+
+    .image img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 180%;
+        padding: 10px;
+    }
+    header h3 {
+        font-size: 100%;
+        padding: 10px;
+    }
+
+}

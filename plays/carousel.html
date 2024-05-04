@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9aa2c7e256.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+
+    <link rel="shortcut icon" href="images/csgoLogo.jpg" type="image/x-icon">
+
+    <title>Graffitis</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="Click Here to Return Home"><img src="images/logoimage.jpg" alt=""></a>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="plays/carousel.html">Graffitis <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="plays/coldzeramirage.html">Coldzera</a>
+                <a href="plays/dosianade.html">Dosia</a>
+                <a href="plays/fnaticbasedust.html">Fnatic</a>
+                <a href="plays/friberginferno.html">Friberg</a>
+                <a href="plays/olofboost.html">Olofboost</a>
+                <a href="plays/olofdefuse.html">OlofDefuse</a>
+                <a href="plays/s1mplecache.html">S1mple</a>
+            </div>
+        </div>
+        <div><a href="aboutme.html">About CS:GO</a></div>
+
+    </nav>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="images/colzeraGraffiti.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/DosiaGraffiti.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/fnaticGraffiti.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/fribergGraffiti.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/Olofboost.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/OlofGraffiti.jpg" alt=""></div>
+                <div class="image fadeout"><img src="images/s1mpleGraffiti.webp" alt=""></div>
+
+                <!-- Font Awesome Next & Previous Buttons -->
+                <div class="prev"><i onclick="showImage(-1)" class="fa-solid fa-backward"></i></div>
+                <div class="next"><i onclick="showImage(1)" class="fa-solid fa-forward"></i></div>
+                
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Bernardo Productions</p>
+    </footer>
+</body>
+</html>
+<script src="js/carousel.js"></script>
