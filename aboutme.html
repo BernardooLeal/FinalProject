@@ -2,10 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/9aa2c7e256.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages.css">
+
+    <link rel="shortcut icon" href="images/csgoLogo.jpg" type="image/x-icon">
+    <title>About CS:GO</title>
 </head>
 <body>
+    <header>
+        
+        <a href="index.html" title="Click Here to Return Home"><img src="images/csgoLogo.jpg" alt="CS:GO Logo"></a>
+    
+        <div>
+            <h2>CS:GO Graffitis</h2>
+            <h3>Understand the story behind each graffiti</h3>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+    <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div class="submenu">
+            <div class="submenu-button"><a href="carousel.html">Graffitis <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-content">
+                <a href="plays/coldzeramirage.html">Coldzera</a>
+                <a href="plays/dosianade.html">Dosia</a>
+                <a href="plays/fnaticbasedust.html">Fnatic</a>
+                <a href="plays/friberginferno.html">Friberg</a>
+                <a href="plays/olofboost.html">Olofboost</a>
+                <a href="plays/olofdefuse.html">OlofDefuse</a>
+                <a href="plays/s1mplecache.html">S1mple</a>
+            </div>
+        </div>
+        <div><a href="aboutme.html">About CS:GO</a></div>
+    </nav>
+    <main>
+        <section>
+            <h3>About CS:GO</h3>
+            <img width="700" height="400" src="images/csgo.png" alt="">
+            <p>Counter-Strike: Global Offensive (CS:GO) expands upon the team-based first person shooter gameplay the original Counter-Strike pioneered when it launched in 1999. Two teams compete in multiple rounds of objective-based game modes with the goal of winning enough rounds to win the match.</p>
+
+            <p>CS:GO features new maps, characters, and weapons and delivers updated versions of the classic Counter-Strike maps like Dust, Inferno, Nuke, Train, and more. In addition, CS:GO introduces new game modes like Arms Race, Flying Scoutsman and Wingman, and features online matchmaking and Competitive Skill Groups.</p>
+
+            <h3>Game Modes</h3>
+            <img width="700" height="400" src="images/gamemodes.png" alt="">
+
+            <h2>Competitive</h2>
+            <p>This is the classic game mode that put Counter-Strike on the map. Two teams of five compete in a best-of-30 match using standard competitive Counter-Strike rules.</p>
+            <p>Players must purchase armor, weapons, defuse or rescue kits, and manage their in-game economy to maximize their chance of success. The first team to win 16 rounds in either Bomb Defusal or Hostage Rescue game modes wins the match.</p>
+            <img width="700" height="400" src="images/comp.webp" alt="">
+            <p>Competitive offers unique Skill Groups players can earn and display, beginning with Silver 1 and progressing up to The Global Elite. Join a match on your own or form a team and queue for a match together!</p>
+
+            <h2>Wingman</h2>
+            <img width="700" height="400" src="images/wingman.webp" alt="">
+            <p>Queue by yourself or grab a friend in this 2v2 best-of-16 game mode on single bomb site maps. Players earn a Skill Group exclusive to Wingman and play using the Competitive Bomb Defusal ruleset. Buy weapons, armor, and defuse kits in an effort to plant the bomb or defend the bomb site!</p>
+
+            <h2>Casual</h2>
+            <p>Ready to play some Counter-Strike but don’t want to commit to a full 30 round match? Find a Casual match and play at your own pace in this drop-in, drop-out game mode.</p>
+            <img width="700" height="400" src="images/casual.jpg" alt="">
+            <p>In Casual mode players automatically receive armor and defusal kits, play with a simplified economy, and team damage has been turned off. Join a game and begin mastering CS:GO’s fundamentals!</p>
+
+            <h2>Deathmatch</h2>
+            <p>This fast-paced Casual game mode allows instant respawns and encourages rapid engagements. After spawning, players have a limited amount of time to buy weapons of their choice and engage the enemy.</p>
+            <img width="700" height="400" src="images/deathmatch.jpeg" alt="">
+            <p>Kills with different weapons are worth different point amounts, and throughout the match players will be given bonus points for achieving kills with selected weapons. Respawn immediately and get back to the fight!</p>
+
+            <h2>Arms Race</h2>
+            <p>Arms race is a gun-progression mode featuring instant respawning designed for rapid close quarters combat.</p>
+            <img width="700" height="400" src="images/armsRace.webp" alt="">
+            <p>Players gain new weapons immediately after registering a kill as they work their way through each weapon in the game. Get a kill with the final weapon, the golden knife, and win the match!</p>
+
+            <h2>Demolition</h2>
+            <p>In Demolition players take turns attacking and defending a single bombsite in a series of maps designed for fast-paced gameplay.</p>
+            <img width="700" height="400" src="images/demolition.jpg" alt="">
+            <p>Players are automatically granted a starting weapon and advance through a sequence of firearms when they register a kill. The more kills you earn the further you’ll advance towards stronger weapons which give your team an advantage, like powerful sniper rifles!</p>
+
+            <h2>Flying Scoutsman</h2>
+            <img width="700" height="400" src="images/scout.webp" alt="">
+            <p>This Casual 8v8 game mode features reduced gravity, does not penalize players for shooting while moving, and only allows two weapons – SSG 08 sniper rifles and knives. Take to the skies and eliminate your enemies; the first team to 9 rounds wins!</p>
+
+        </section>
+    </main>
+    <div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+    <footer>
+        <p>&copy;<span id="copyright"></span> Bernardo Leal Productions</p>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/scripts.js"></script>
     
 </body>
 </html>

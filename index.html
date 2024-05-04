@@ -23,7 +23,7 @@
     
         <div>
             <h2>CS:GO Graffitis</h2>
-            <h3>Understand the story behind each graffiti (UNDER CONSTRUCTION)</h3>
+            <h3>Understand the story behind each graffiti</h3>
         </div>
     </header>
 
@@ -32,7 +32,7 @@
     <nav class="navmenu" id="navmenu" data-visible="false">
         <div><a href="index.html">Home</a></div>
         <div class="submenu">
-            <div class="submenu-button"><a href="plays/carousel.html">Graffitis <i class="fa-solid fa-caret-down"></i></a></div>
+            <div class="submenu-button"><a href="carousel.html">Graffitis <i class="fa-solid fa-caret-down"></i></a></div>
             <div class="submenu-content">
                 <a href="plays/coldzeramirage.html">Coldzera</a>
                 <a href="plays/dosianade.html">Dosia</a>
@@ -61,6 +61,19 @@
                 <div><img src="images/wallpaper.jpg" alt=""></div>
                 <div><img src="images/stickers2.jpg" alt=""></div>
             </div>
+            <div class="container">
+                <div class="digitalclock">
+                <h3 id="day">FRI</h3>
+                <h3 id="hour">04</h3>
+                <h3 id="colon1">:</h3>
+                <h3 id="dash">----</h3>
+                <h3 id="minute">20</h3>
+                <h3 id="colon2">:</h3>
+                <h3 id="dash2">----</h3>
+                <h3 id="second">00</h3>
+                <h3 id="ampm">PM</h3>
+                </div>
+            </div>
         </aside>
         <section>
             <h3 id="History"><a href="#History"></a>History of CS:GO</h3>
@@ -78,24 +91,27 @@
                     <p>A player must accomplish something incredible during a Major (CS:GO Worldcup) to earn one.</p>
                 </li>
             </ul>
-            <h3 id="Graffiti"><a href="#rock"></a>Some Graffitis</h3>
-            <div class="albumcovers">
+            <h3 id="Graffiti"><a href="Graffiti"></a>Some Graffitis</h3>
+            <div class="graffitis">
                 <div><img src="images/OlofGraffiti.jpg" alt=""></div>
                 <div><img src="images/s1mpleGraffiti.webp" alt=""></div>
                 <div><img src="images/colzeraGraffiti.jpg" alt=""></div>
             </div>
             <h3 id="Video" >Full Video About it</h3>
-            <div class="frog">
+            <div class="video">
                 <iframe width="800" height="500" src="https://www.youtube.com/embed/zQ87h7ti2Jw" title="Every Graffiti/Memorial in CSGO! (History Made by Pros, Immortalised by Valve)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 
             </div>
 
         </section>
     </main>
+    <div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
     <footer>
         <p>&copy;<span id="copyright"></span> Bernardo Leal Productions</p>
     </footer>
 
+    <script src="js/scroll.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/digitalclock.js"></script>
 </body>
 </html>

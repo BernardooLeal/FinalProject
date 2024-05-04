@@ -1,0 +1,27 @@
+section img {
+    width: 100;
+}
+
+section h2 {
+    padding: 1em;
+    font-size: 150%;
+}
+
+section h3 {
+    padding: 1em;
+    font-size: 200%;
+}
+
+section p {
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+
+    section img {
+        width: 100%;
+    }
+
+
+}

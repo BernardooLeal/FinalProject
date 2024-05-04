@@ -22,8 +22,16 @@ header {
     align-items: center;
 }
 header a img {
+    padding: 1em;
     max-width: 100px;
     margin: 1vh;
+}
+
+header h2 {
+    font-size: 300%;
+}
+header h3 {
+    font-size: 100%;
 }
 
 /* Nav Menu */
@@ -84,7 +92,7 @@ header a img {
     aspect-ratio: 1;
     position: absolute;
     top: 15px;
-    left: 15px;
+    right: 15px;
     border: none;
     background-image: url("../images/hamburger.png");
     background-position: center;
@@ -145,6 +153,24 @@ aside {
     margin-bottom: 1em;
     border-radius: 10px;
 }
+
+.digitalclock {
+    display: flex;
+    flex-direction: row;
+    gap: .25em;
+    font-size: 40px;  
+    background-color: rgb(69, 64, 64);  
+    padding: 6px;
+}
+
+.digitalclock h3 {
+    background-color: rgb(69, 64, 64);     
+}
+
+#dash,#dash2{
+    display: none;
+}
+
 section {
     flex: 0 1 600px;
     padding: 2vh;
@@ -166,16 +192,39 @@ section p {
 section ul {
     margin: 0 3em;
 }
-.albumcovers img {
+.graffitis img {
     max-width: 600px;
     border-radius: 10px;
     border: 3px ridge goldenrod;
     margin-bottom: 2em;
 }
-.frog img {
+.video img {
     max-width: 500px;
     border-radius: 50%;
 }
+
+#cornerBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 1em 2em;
+    background-color: rgba(255, 0, 0, 0.395);
+    border: rgba(255, 0, 0, 0.395);
+    border-radius: 10px;
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+  }
+
+  #cornerBtn:hover {
+    background-color: black;
+    color: red;
+    border: 2px ridge goldenrod;
+
+  }
 
 footer {
     position: sticky;
@@ -194,8 +243,16 @@ footer p {
         justify-content: center;
     }
     header a img {
-        max-width: 300px;
+        max-width: 100px;
         margin: 0 auto;
+    }
+
+    header h2 {
+        font-size: 150%;
+    }
+
+    header h3 {
+        font-size: 100%;
     }
 
     .toggle-menu {
@@ -255,15 +312,38 @@ footer p {
     section p {
         margin: 1em 2em;
     }
-    .albumcovers img, .frog img, .thumbs img {
+    .graffitis img, .video img, .thumbs img {
         width: 100%;
         border-radius: 0;
         border: none;
     }
+
+    .video {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        max-width: 100%;
+    }
+
     .thumbs {
         margin: 0;
     }
     .thumbs img {
         max-width: 100%;
     }
+
+    .digitalclock{
+        font-size: 150%;
+        display: flex;
+        align-items: center;
+     }
+
+    #colon1, #colon2 {
+    display: none; 
+  }
+
+    #dash,#dash2 {
+    display: block;
+}
+
 }
